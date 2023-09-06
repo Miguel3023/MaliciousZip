@@ -1,2 +1,2 @@
 # MaliciousZip
-Script en Python para generar un archivo malicioso en formato ".zip" para una rev shell
+Este Script de Python contiene los bytes de la estrutura de un archivo con extensión ".zip". Se le hace creer al servidor que se está subiendo un archivo ".zip" que contiene un ".pdf" comprimido, lo que realmente sucede es que subimos un archivo ".php" gracias a que añadimos un null byte a la hora de definir la extensión del ".pdf", que contiene un ejecución a nivel de sistema Unix/Linux para entablarte una reverse shell a través del puerto 4646
